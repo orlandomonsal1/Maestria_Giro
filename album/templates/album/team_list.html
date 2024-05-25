@@ -1,0 +1,12 @@
+<h1>GIRO</h1>
+
+<h2>Players</h2>
+
+<div>
+    {% for c in object_list %}
+        <a href="{% url 'team-detail' c.pk %}">
+            {{ c.name }} <br>
+        </a>
+    {% endfor %}
+</div>
+
