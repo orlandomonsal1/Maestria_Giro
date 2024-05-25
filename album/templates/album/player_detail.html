@@ -12,6 +12,10 @@
        {% endif %}
     </h2>
     <p><strong>comments: </strong>{{ object.comment|default:"no comments" }}</p>
+
+    <a href="{% url "player-update" object.id %}">edit</a>
+    <a href="{% url "player-delete" object.id %}">delete</a> 
+
    <hr>
 {% endblock section %}
 
